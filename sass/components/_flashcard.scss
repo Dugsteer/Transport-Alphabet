@@ -1,0 +1,54 @@
+.overlay {
+    position: relative;
+    grid-row: 2/3;
+    align-self: center;
+    justify-self: center;
+    width: 640px;
+    height: 480px;
+    border-radius: 8px;
+    background: rgba(0,0,0, .9);
+    z-index:5;
+}
+
+
+.slideshow__container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 640px;
+    height: 480px;
+    border-radius: 8px;
+    opacity: 1;
+
+
+    background-repeat: no-repeat;
+    background-position-x: center;
+    transition: all .2s ease; 
+
+  &:hover {
+    opacity: 0.3;
+}
+
+
+    &-text {
+            position: absolute;
+            font-size: 7rem;
+            text-align: center;
+            width: 500px;
+            color:white;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: block;
+            transition: all .2s ease;
+            z-index: 2000;
+            display: none;
+          
+    }
+        
+    }
+
+    .overlay:hover > .slideshow__container-text {
+        display: block;
+    }
+

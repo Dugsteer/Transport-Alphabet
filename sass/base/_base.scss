@@ -1,0 +1,39 @@
+*,
+*::after,
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; //1rem = 10px; 10px/16px default = 62.5%;
+
+  @media only screen and (max-width:$bp-large) {
+    font-size: 50%;
+  }
+  
+  @media only screen and (max-width:$bp-smallest){
+   font-size: 40%;
+  }
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.content {
+  width: 90%;
+  min-height: 100vh;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  background-color: $color-light-grey;
+  margin: 0 auto;
+  grid-template-rows: 8vw minmax(0, 1fr)  4vw 4vw ;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+}

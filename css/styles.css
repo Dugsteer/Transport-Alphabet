@@ -1,0 +1,285 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+*,
+*::after,
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+  @media only screen and (max-width: 62.5em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (max-width: 30em) {
+    html {
+      font-size: 40%; } }
+
+body {
+  padding: 0;
+  margin: 0; }
+
+.content {
+  width: 90%;
+  min-height: 100vh;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  background-color: #eaeaea;
+  margin: 0 auto;
+  grid-template-rows: 8vw minmax(0, 1fr) 4vw 4vw;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem; }
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #33363b; }
+
+p {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.9rem;
+  font-size: 1.6rem; }
+
+h1 {
+  margin: 0; }
+
+h2 {
+  color: #368cbf;
+  font-size: 2rem; }
+
+h3 {
+  font-weight: normal; }
+
+h4 {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  line-height: 1.2;
+  margin-bottom: 0.7rem; }
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-row: 3/4;
+  grid-column: 1/2;
+  width: 60%;
+  margin: auto;
+  height: 5vw; }
+  .buttons__icon {
+    height: 4rem;
+    width: 4rem;
+    margin: 0 5rem;
+    justify-self: center;
+    fill: #f6653c; }
+    .buttons__icon:hover {
+      fill: #ffe164; }
+
+.btn1 {
+  grid-column: 1/2; }
+
+.btn2 {
+  grid-column: 2/3; }
+
+.btn3 {
+  grid-column: 3/4; }
+
+.btn4 {
+  grid-column: 6/7; }
+
+.btn {
+  height: 5rem;
+  width: 8rem;
+  border-radius: 10px;
+  margin: 0 1rem;
+  background-color: #f6653c;
+  box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fff;
+  outline: none;
+  border: none; }
+  .btn:hover {
+    background-color: #dd5b36; }
+  .btn:active {
+    transform: translateY(2px); }
+  @media only screen and (max-width: 50em) {
+    .btn {
+      height: 4rem;
+      width: 10rem; } }
+
+.ads {
+  background-color: green;
+  width: 90%;
+  margin: auto;
+  height: 60%; }
+  .ads-top {
+    margin-top: 2vw;
+    grid-row: 1/2; }
+
+.overlay {
+  position: relative;
+  grid-row: 2/3;
+  align-self: center;
+  justify-self: center;
+  width: 640px;
+  height: 480px;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 5; }
+
+.slideshow__container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 640px;
+  height: 480px;
+  border-radius: 8px;
+  opacity: 1;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  transition: all .2s ease; }
+  .slideshow__container:hover {
+    opacity: 0.3; }
+  .slideshow__container-text {
+    position: absolute;
+    font-size: 7rem;
+    text-align: center;
+    width: 500px;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    transition: all .2s ease;
+    z-index: 2000;
+    display: none; }
+
+.overlay:hover > .slideshow__container-text {
+  display: block; }
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #eaeaea;
+  padding: 1.5rem 0;
+  height: 7rem;
+  background-color: #368cbf; }
+  .footer__copyright {
+    text-align: center;
+    line-height: 1.5; }
+    .footer__copyright p {
+      font-size: 1.2rem; }
+  @media only screen and (max-width: 37.5em) {
+    .footer {
+      position: fixed;
+      bottom: 0px;
+      left: 0px;
+      width: 100%; } }
+
+#footer a {
+  color: #ffe164; }
+
+.nav-bar {
+  background-color: #368cbf;
+  color: #eaeaea;
+  display: grid;
+  height: 7rem;
+  grid-template-columns: 5vw 8vw 15vw 45vw 18vw 5vw;
+  z-index: 5; }
+  .nav-bar__logo {
+    grid-column: 2/3;
+    align-self: center;
+    justify-self: start; }
+  .nav-bar__title {
+    grid-column: 3/4; }
+  .nav-bar__main {
+    grid-column: 4/5; }
+  @media only screen and (max-width: 50em) {
+    .nav-bar__link {
+      grid-column: 4/5; } }
+  @media only screen and (max-width: 50em) {
+    .nav-bar {
+      grid-template-columns: 5vw 18vw 1fr 18vw 5vw; } }
+  .nav-bar__title {
+    font-family: Montserrat, sans-serif;
+    margin-right: auto;
+    align-self: center;
+    font-size: 1.6rem; }
+    @media only screen and (max-width: 50em) {
+      .nav-bar__title {
+        display: none; } }
+    @media only screen and (max-width: 37.5em) {
+      .nav-bar__title {
+        font-size: 1rem; } }
+    .nav-bar__title:hover {
+      color: #ffe164; }
+    .nav-bar__title-page {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: auto;
+      height: 7rem;
+      font-size: 2.4rem; }
+      @media only screen and (max-width: 50em) {
+        .nav-bar__title-page {
+          font-size: 1.6rem; } }
+      .nav-bar__title-page-deco {
+        height: 4rem;
+        width: auto;
+        margin: 0 2rem; }
+        @media only screen and (max-width: 37.5em) {
+          .nav-bar__title-page-deco {
+            display: none; } }
+  .nav-bar__logo-img {
+    height: 4rem;
+    width: 4rem;
+    margin-left: 2rem;
+    justify-self: center;
+    fill: #fff; }
+    .nav-bar__logo-img:hover {
+      fill: #ffe164; }
+  .nav-bar__links {
+    display: flex;
+    justify-content: space-evenly;
+    width: 30vw; }
+  .nav-bar__link {
+    font-size: 1.4rem;
+    align-self: center;
+    color: #eaeaea;
+    font-family: Montserrat, sans-serif;
+    text-decoration: none; }
+    .nav-bar__link:hover {
+      color: #ffe164; }
+    @media only screen and (max-width: 37.5em) {
+      .nav-bar__link.link2, .nav-bar__link.link3 {
+        display: none; } }
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  grid-row: 4/5;
+  width: 50vw;
+  align-self: start;
+  margin: 4rem auto;
+  grid-column: 1/2;
+  flex: 0 0 0; }
+
+.card {
+  box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.4); }
+
+.title {
+  grid-row: 4/5;
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  color: #33363b; }

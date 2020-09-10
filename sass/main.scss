@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+
+@import "abstracts/variables";
+
+@import "base/base";
+@import "base/typography";
+
+@import "components/buttons";
+@import "components/ads";
+@import "components/flashcard";
+
+
+
+@import "layout/footer";
+@import "layout/navigation";
+@import "layout/wrapper";
+@import "layout/title";
