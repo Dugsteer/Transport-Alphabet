@@ -39,7 +39,7 @@ function goForwards() {
   if (x < imageList.length - 1) {
     x++;
     document.getElementById("slideshow-art").style.backgroundImage = ` url(/img/${imageList[x]})`;
-    document.getElementById("slideshow-art").style.backgroundSize = "cover";
+    // document.getElementById("slideshow-art").style.backgroundSize = "cover";
 
     document.getElementById("slideshow-text").textContent = `${imageList[
       x
@@ -50,7 +50,7 @@ function goForwards() {
     document.getElementById("slideshow-art").style.background= ` url(/img/${
       imageList[imageList.length - 1]
     })`;
-    document.getElementById("slideshow-art").style.backgroundSize = "cover";
+    // document.getElementById("slideshow-art").style.backgroundSize = "cover";
 
     document.getElementById("slideshow").textContent = `${imageList[
       imageList.length - 1
@@ -66,7 +66,7 @@ function goBackwards() {
   if (x > 0) {
     x--;
     document.getElementById("slideshow-art").style.background = `url(/img/${imageList[x]})`;
-    document.getElementById("slideshow-art").style.backgroundSize = "cover";
+    // document.getElementById("slideshow-art").style.backgroundSize = "cover";
 
     document.getElementById("slideshow-text").textContent = `${imageList[
       x
@@ -75,7 +75,7 @@ function goBackwards() {
     return x;
   } else {
     document.getElementById("slideshow-art").style.background = ` url(/img/${imageList[0]})`;
-    document.getElementById("slideshow-art").style.backgroundSize = "cover";
+    // document.getElementById("slideshow-art").style.backgroundSize = "cover";
 
     document.getElementById(
       "slideshow-text"

@@ -128,8 +128,8 @@ h4 {
   grid-row: 2/3;
   align-self: center;
   justify-self: center;
-  width: 640px;
-  height: 480px;
+  width: 800px;
+  height: 500px;
   border-radius: 8px;
   background: rgba(0, 0, 0, 0.9);
   z-index: 5; }
@@ -138,24 +138,25 @@ h4 {
   position: absolute;
   top: 0;
   left: 0;
-  width: 640px;
-  height: 480px;
+  width: 800px;
+  height: 500px;
   border-radius: 8px;
   opacity: 1;
   background-repeat: no-repeat;
-  background-position-x: center;
+  background-position-x: bottom;
   transition: all .2s ease; }
   .slideshow__container:hover {
     opacity: 0.3; }
   .slideshow__container-text {
     position: absolute;
-    font-size: 7rem;
+    font-size: 6rem;
     text-align: center;
     width: 500px;
+    height: 100px;
     color: white;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
     display: block;
     transition: all .2s ease;
     z-index: 2000;
