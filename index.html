@@ -30,30 +30,34 @@
 
         <div class="ads-top ads"></div>
 
+        <div class="card-wrapper">
         <div id="overlay" class="overlay">
-          <p id="slideshow-text" class="slideshow__container-text">Firetruck</p>
-
-        <div id="slideshow-art" class="slideshow__container">
+          <img id="image-art" class="image-art" src="img/bike.jpg" alt="">
+          <div class="after"></div>
+          <p id="image-text" class="image-text">Firetruck</p>
       </div>
 
+      <div class="buttons">
+        <svg class="buttons__icon" onclick="goBackwards()">
+            <use xlink:href="sprite2.svg#left-arrow">
+            </use>
+          </svg> 
+        <p class="count" id="count">2/20</p>
+        <svg class="buttons__icon"  onclick="goForwards()">
+            <use xlink:href="sprite2.svg#right-arrow">
+            </use>
+          </svg> 
+    </div>
+
+    <div class="title">
+        <h4>Hover over the picture to see the name</h4>
+    </div>
+  </div>
+
       </div>
 
 
-        <div class="buttons">
-            <svg class="buttons__icon" onclick="goBackwards()">
-                <use xlink:href="sprite2.svg#left-arrow">
-                </use>
-              </svg> 
-            <p class="count" id="count">2/20</p>
-            <svg class="buttons__icon"  onclick="goForwards()">
-                <use xlink:href="sprite2.svg#right-arrow">
-                </use>
-              </svg> 
-        </div>
-
-        <div class="title">
-            <p>Hover over the picture to see the name</p>
-        </div>
+      
 
 
 

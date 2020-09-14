@@ -24,13 +24,13 @@ body {
 
 .content {
   width: 90%;
-  min-height: 100vh;
+  height: 90vh;
   display: grid;
   align-items: center;
   justify-content: center;
   background-color: #eaeaea;
   margin: 0 auto;
-  grid-template-rows: 8vw minmax(0, 1fr) 4vw 4vw;
+  grid-template-rows: 8vw minmax(0, 1fr) 10vw 8vw;
   grid-template-columns: 1fr;
   grid-gap: 1rem; }
 
@@ -56,9 +56,8 @@ h3 {
   font-weight: normal; }
 
 h4 {
-  font-weight: bold;
-  text-transform: uppercase;
-  font-size: 1.6rem;
+  font-weight: normal;
+  font-size: 3rem;
   line-height: 1.2;
   margin-bottom: 0.7rem; }
 
@@ -70,6 +69,7 @@ h4 {
   grid-column: 1/2;
   width: 60%;
   margin: auto;
+  margin-top: 2rem;
   height: 5vw; }
   .buttons__icon {
     height: 4rem;
@@ -123,60 +123,65 @@ h4 {
     margin-top: 2vw;
     grid-row: 1/2; }
 
+.card-wrapper {
+  grid-row: 2/3;
+  align-self: start;
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
 .overlay {
   position: relative;
-  grid-row: 2/3;
-  align-self: center;
-  justify-self: center;
+  margin-top: 3rem;
   width: 800px;
   height: 500px;
-  border-radius: 8px;
-  background: rgba(0, 0, 0, 0.9);
-  z-index: 5; }
+  transform: all 5s ease; }
 
-.slideshow__container {
+.overlay .after {
   position: absolute;
   top: 0;
   left: 0;
-  width: 800px;
-  height: 500px;
-  border-radius: 8px;
-  opacity: 1;
-  background-repeat: no-repeat;
-  background-position-x: bottom;
-  transition: all .2s ease; }
-  .slideshow__container:hover {
-    opacity: 0.3; }
-  .slideshow__container-text {
-    position: absolute;
-    font-size: 6rem;
-    text-align: center;
-    width: 500px;
-    height: 100px;
-    color: white;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%);
-    display: block;
-    transition: all .2s ease;
-    z-index: 2000;
-    display: none; }
+  width: 100%;
+  height: 100%;
+  display: none;
+  transform: all 5s ease; }
 
-.overlay:hover > .slideshow__container-text {
+.overlay:hover .after {
+  display: block;
+  background: rgba(0, 0, 0, 0.4);
+  transform: all 5s ease; }
+
+.image-art {
+  height: 100%;
+  width: 100%; }
+
+.image-text {
+  position: absolute;
+  font-size: 6rem;
+  text-align: center;
+  width: 60%;
+  height: 30%;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+  transition: all .2s ease;
+  z-index: 2000; }
+
+.overlay:hover .image-text {
   display: block; }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   .overlay {
     width: 400px;
     height: 250px; }
-  .slideshow__container {
-    width: 00px;
-    height: 250px;
-    background-size: 400px x 250px; }
-  .slideshow__container-text {
+  .image-text {
     width: 300;
     height: 150;
-    font-size: 2rem; } }
+    font-size: 3rem; } }
 
 .footer {
   display: flex;
