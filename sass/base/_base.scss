@@ -27,13 +27,13 @@ body {
 
 .content {
   width: 90%;
-  min-height: 100vh;
+  height: 90vh;
   display: grid;
   align-items: center;
   justify-content: center;
   background-color: $color-light-grey;
   margin: 0 auto;
-  grid-template-rows: 8vw minmax(0, 1fr)  4vw 4vw ;
+  grid-template-rows: 8vw minmax(0, 1fr)  10vw 8vw ;
   grid-template-columns: 1fr;
   grid-gap: 1rem;
 }
