@@ -1,0 +1,44 @@
+.pages {
+    grid-row: 3/4;
+    width: 100%;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: flex-start;
+    
+
+
+&__text {
+    margin-bottom: 3rem;
+
+}
+
+&__images {
+    display: flex;
+    justify-content: space-evenly;
+
+    &-1{
+        width: 40%;
+
+        & img {
+            width: 100%;
+            box-shadow: 3px 3px 3px rgba(0,0,0,.4);
+
+            &:hover {
+                transform: scale(.98) translateY(1px);
+            }
+        }
+
+        & figcaption {
+            margin-top: 1rem;
+            margin-bottom: 2rem;
+            font-size: 1.2rem;
+            text-align: center;
+        }
+
+    }
+
+}
+
+
+}

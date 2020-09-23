@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Fun, free flashcards for students and young learners of English that teach transport vocabulary from Els-ology.com">
-    <title>My Esl-ology Transport ABC</title>
+    <meta name="description" content="Fun, free  online transportation alphabet flashcards for learning English">
+    <meta name="keywords" content="Transportation flashcards vehicles online">
+    <title>Transportation A to Z Photo Flashcards</title>
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
@@ -17,9 +18,7 @@
           </svg>    </a>
         <h3 class="nav-bar__title">Esl-Ology.Com</h3>
         <div class="nav-bar__title-page">
-      <img src="./img/Flag.png" alt="" class="nav-bar__title-page-deco">
-      <span class="nav-bar__title-page-main" id="pageTitle">My Transport ABC</span>
-      <img src="./img/Flag.png" alt="" class="nav-bar__title-page-deco">
+      <span class="nav-bar__title-page-main" id="pageTitle">Transportation ABC</span>
     </div>
     <div class="nav-bar__links">
       <a href="index.html" class="nav-bar__link link3">Home</a>
@@ -28,13 +27,22 @@
 
     <div id="content" class="content">
 
-        <div class="ads-top ads"></div>
+        <div class="introduction">
+          <div class="introduction__img">
+            <img src="img/transport-image.png" alt="decorative">
+          </div>
+        <div class="introduction__text">
+          <p>
+            Unlike an ordinary set of TEFL transportation flashcards, this set has one vehicle for each letter from A to Z. English Students can have fun playing a game where they guess what the next letter is going to be — bearing in mind that some letters, like D and X, are difficult (we have dog-sled and X-wing Fighter). The transport word appears when you hover over the photo.
+          </p>
+        </div>
+        </div>
 
         <div class="card-wrapper">
         <div id="overlay" class="overlay">
-          <img id="image-art" class="image-art" src="img/bike.jpg" alt="">
+          <img id="image-art" class="image-art" src="img/aeroplane.jpg" alt="">
           <div class="after"></div>
-          <p id="image-text" class="image-text">Firetruck</p>
+          <p id="image-text" class="image-text">aeroplane</p>
       </div>
 
       <div class="buttons">
@@ -48,11 +56,29 @@
             </use>
           </svg> 
     </div>
-
-    <div class="title">
-        <h4>Hover over the picture to see the name</h4>
-    </div>
   </div>
+
+    <div class="pages">
+      <div class="pages__text">
+        <h2>Try our other TEFL tranportation games.</h2>
+      </div>
+
+      <div class="pages__images">
+        <div class="pages__images-1 figure">
+          <a href="matching-transport.html">
+          <img src="img/transport-memory.jpg" alt=""></a>
+        <figcaption>Tranportation Memory Matching</figcaption>
+        </div>
+        <div class="pages__images-1 figure">
+          <a href="bingo-transport.html">
+          <img src="img/vehiclesBing.jpg" alt=""></a>
+        <figcaption>Vehicles Bingo with Printable Cards</figcaption>
+      </div>
+      </div>
+    </div>
+
+
+
 
       </div>
 
@@ -71,7 +97,48 @@
         href="https://unsplash.com">Unsplash </a>etc. Icons made by  <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a>. Thanks,guys!</p>
     </div>
     </footer>
-
+    <div class="hidden">
+      <script>
+<!--//--><![CDATA[//><!--
+var images = new Array();
+function preload(){
+  for(i=0; i<preload.arguments.length; i++){
+    images[i] = new Image();
+    images[i].src = preload.arguments[i];
+  }
+}
+preload(
+  "img/aeroplane.jpg",
+  "img/bike.jpg",
+  "img/car.jpg",
+  "img/dog-sled.jpg",
+  "img/ecar.jpg",
+  "img/firetruck.jpg",
+  "img/gondola.jpg",
+  "img/helicopter.jpg",
+  "img/icebreaker.jpg",
+  "img/jetski.jpg",
+  "img/kayak.jpg",
+  "img/limousine.jpg",
+  "img/motorbike.jpg",
+  "img/narrowboat.jpg",
+  "img/offroad-vehicle.jpg",
+  "img/punt.jpg",
+  "img/quad-bike.jpg",
+  "img/rocket.jpg",
+  "img/sailboat.jpg",
+  "img/train.jpg",
+  "img/unicycle.jpg",
+  "img/van.jpg",
+  "img/wagon.jpg",
+  "img/X-wing.jpg",
+  "img/yacht.jpg",
+  "img/zepellin.jpg",
+)
+//--><!]]>
+</script>
+    </div>
+    
     <script src="script.js"></script>
 </body>
 </html>

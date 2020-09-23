@@ -23,17 +23,27 @@ html {
 body {
   padding: 0;
   margin: 0;
-}
+  background-color: $color-light-grey;
+
+  @media only screen and (max-width:$bp-large){
+    background-color: #fff;
+   }
+ }
+
 
 .content {
   width: 90%;
-  height: 90vh;
   display: grid;
   align-items: center;
   justify-content: center;
-  background-color: $color-light-grey;
+  background-color: $color-white;
   margin: 0 auto;
-  grid-template-rows: 8vw minmax(0, 1fr)  10vw 8vw ;
+  grid-template-rows: 1
+  3fr 3fr 3fr;
   grid-template-columns: 1fr;
   grid-gap: 1rem;
+
+  @media only screen and (max-width:$bp-medium){
+    grid-template-rows: 2fr 2fr 2fr;
+  }
 }

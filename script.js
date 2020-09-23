@@ -27,7 +27,7 @@ var imageList = [
   "van.jpg",
   "wagon.jpg",
   "X-wing.jpg",
-  "Yacht.jpg",
+  "yacht.jpg",
   "zepellin.jpg",
 ];
 
