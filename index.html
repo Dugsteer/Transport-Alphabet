@@ -6,6 +6,9 @@
     <meta name="description" content="Fun, free  online transportation alphabet flashcards for learning English">
     <meta name="keywords" content="Transportation flashcards vehicles online">
     <title>Transportation A to Z Photo Flashcards</title>
+    <link rel="icon" type="image/png"
+    href="favicon.png";
+  />
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
@@ -18,7 +21,7 @@
           </svg>    </a>
         <h3 class="nav-bar__title">Esl-Ology.Com</h3>
         <div class="nav-bar__title-page">
-      <span class="nav-bar__title-page-main" id="pageTitle">Transportation ABC</span>
+      <span class="nav-bar__title-page-main" id="pageTitle">TRANSPORT ABC</span>
     </div>
     <div class="nav-bar__links">
       <a href="index.html" class="nav-bar__link link3">Home</a>
@@ -46,15 +49,14 @@
       </div>
 
       <div class="buttons">
-        <svg class="buttons__icon" onclick="goBackwards()">
-            <use xlink:href="sprite2.svg#left-arrow">
-            </use>
-          </svg> 
+        <div class="buttons__icon" onclick="goBackwards()">
+        <img class="buttons__icon-img arrow1" src="img/right-arrow.png" alt="">
+      </div>
         <p class="count" id="count">2/20</p>
-        <svg class="buttons__icon"  onclick="goForwards()">
-            <use xlink:href="sprite2.svg#right-arrow">
-            </use>
-          </svg> 
+        <div class="buttons__icon" onclick="goForwards()">
+        <img class="buttons__icon-img arrow2" src="img/right-arrow.png" alt="">
+        </div>
+      
     </div>
   </div>
 
@@ -94,10 +96,10 @@
           <p>© 2020 Copyright Esl-ology.com & copyright owners.</p>
           <p>Vectors & images
       by <a href="https://www.vecteezy.com">Vecteezy</a>&nbsp&nbsp<a href="https://pixabay.com">Pixabay</a>&nbsp&nbsp<a
-        href="https://unsplash.com">Unsplash </a>etc. Icons made by  <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a>. Thanks,guys!</p>
+        href="https://unsplash.com">Unsplash </a>. Icons made by <a href="https://icon54.com/" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> Thanks,guys!</p>
     </div>
     </footer>
-    <div class="hidden">
+    <div class="hidden"><img src="sprite2.svg" style="display: none">
       <script>
 <!--//--><![CDATA[//><!--
 var images = new Array();
@@ -108,6 +110,7 @@ function preload(){
   }
 }
 preload(
+  "right-arrow.png",
   "img/aeroplane.jpg",
   "img/bike.jpg",
   "img/car.jpg",

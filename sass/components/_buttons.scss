@@ -15,11 +15,25 @@
         width: 4rem;
         margin: 0 5rem;
         justify-self: center;
-        fill: $color-orange;
-        &:hover {
-          fill: $color-yellow;
+
+        &:hover{
+            transform: scale(1.1);
+        }
+
+        &:active{
+            transform: translateY(2px);
+        }
+
+        &-img {
+            height: 100%;
+            width: 100%;
         }
       }
+
+      .arrow1 {
+          transform: scaleX(-1);
+      }
+
 
     // @media only screen and (max-width: $bp-medium){
     //     display: flex;
