@@ -6,14 +6,15 @@
 @import "base/base";
 @import "base/typography";
 
-@import "components/buttons";
 @import "components/ads";
-@import "components/flashcard";
-@import "components/pages";
+@import "components/buttons";
 
-
-
-@import "layout/footer";
 @import "layout/navigation";
+@import "layout/introduction";
 @import "layout/wrapper";
-@import "layout/title";
+@import "layout/content";
+@import "layout/links";
+@import "layout/footer";
+
+
+
