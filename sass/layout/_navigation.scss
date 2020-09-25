@@ -3,6 +3,7 @@
   color: $color-light-grey;
   display: grid;
   height: 7rem;
+  width: 100vw;
   grid-template-columns: 5vw 8vw 15vw 45vw 18vw 5vw;
   z-index: 5;
 
@@ -91,7 +92,7 @@
   &__links {
     display: flex;
     justify-content: space-evenly;
-    width: 30vw;
+    
   }
 
   &__link {

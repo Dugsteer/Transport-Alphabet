@@ -1,4 +1,4 @@
-.card-wrapper {
+.main {
     grid-row: 2/3;
     align-self: start;
     justify-self: center;
@@ -11,8 +11,8 @@ justify-content: center;
 .overlay {
     position: relative;
   margin-top: 3rem;
-    width: 800px;
-    height: 500px;
+    width: 1000px;
+    height: 625px;
     transform: all 5s ease;
     box-shadow: 3px 3px 3px rgba(0,0,0, 0.6);
 
@@ -64,7 +64,31 @@ justify-content: center;
     }
 
 
-@media only screen and (max-width:800px) {
+@media only screen and (max-width:$bp-large) {
+    .overlay {
+        width: 800px;
+        height: 500px;
+    }
+
+    .image-text {
+        width: 300;
+        height: 150;
+        font-size: 4rem;
+    }
+}
+@media only screen and (max-width:$bp-medium) {
+    .overlay {
+        width: 600px;
+        height: 400px;
+    }
+
+    .image-text {
+        width: 300;
+        height: 150;
+        font-size: 4rem;
+    }
+}
+@media only screen and (max-width:$bp-small) {
     .overlay {
         width: 400px;
         height: 250px;

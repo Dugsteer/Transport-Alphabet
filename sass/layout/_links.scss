@@ -1,4 +1,4 @@
-.pages {
+.links {
     grid-row: 3/4;
     width: 700px;
     height: 400px;
@@ -6,6 +6,7 @@
     flex-direction:column;
     align-items: center;
     justify-self: center;
+    text-align: center;
     margin: 4rem 0;
     padding: 2rem 0rem;
     background-color: #fff;
@@ -26,8 +27,10 @@
 
 &__text {
     margin-bottom: 3rem;
-
-}
+    color: $color-blue;
+    font-size: 2rem;
+     
+ }
 
 &__images {
     display: flex;
@@ -55,6 +58,4 @@
     }
 
 }
-
-
 }
