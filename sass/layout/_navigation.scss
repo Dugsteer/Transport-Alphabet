@@ -1,11 +1,25 @@
 .nav-bar {
   background-color: $color-blue;
-  color: $color-light-grey;
+  color: #fff;
   display: grid;
   height: 7rem;
-  width: 100vw;
-  grid-template-columns: 5vw 8vw 15vw 45vw 18vw 5vw;
+  width: 1200px;
+  margin: auto;
+  overflow: none;
+  box-shadow: $box-shadow-page;
+  grid-template-columns: 3% 7% 15% 50% 25%;
   z-index: 5;
+
+
+  @media only screen and (max-width: $bp-largest){
+    width: 100vw;
+  }
+  @media only screen and (max-width: $bp-smallest){
+    width: 100vw;
+    
+  }
+
+
 
   &__logo{
     grid-column: 2/3;
@@ -13,12 +27,15 @@
     justify-self: start;
   }
 
+
   &__title{
     grid-column: 3/4;
   }
 
   &__main{
     grid-column: 4/5;
+    text-align:center;
+
   }
 
   &__link{
@@ -38,6 +55,7 @@
     margin-right: auto;
     align-self: center;
     font-size: 1.6rem;
+
 
     @media only screen and (max-width: $bp-medium) {
       display: none;
@@ -60,7 +78,12 @@
       font-size: 2.4rem;
 
       @media only screen and (max-width: $bp-medium) {
-        font-size: 1.6rem;
+        font-size: 2rem;
+      }
+
+      &-main {
+        line-height: 2.4rem;
+        text-align: center;
       }
 
       &-deco {
@@ -98,7 +121,7 @@
   &__link {
     font-size: 1.4rem;
     align-self: center;
-    color: $color-light-grey;
+    color: #fff;
     font-family: Montserrat, sans-serif;
     text-decoration: none;
 
@@ -108,11 +131,29 @@
 
     &.link2,
     &.link3 {
-      @media only screen and (max-width: $bp-small) {
+      @media only screen and (max-width: $bp-medium) {
         display: none;
       }
     }
   }
 }
 
+// .link3 {
+//   display: none;
+// }
+
+.menu {
+  fill: #fff;
+  align-self: center;
+  cursor: pointer;
+  display: none;
+
+  @media only screen and (max-width: $bp-medium){
+    display: block;
+  }
+
+  &:hover {
+    fill: $color-green;
+  }
+}
 
