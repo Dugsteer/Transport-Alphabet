@@ -62,7 +62,7 @@ h4 {
   justify-content: center;
   grid-row: 3/4;
   grid-column: 2/3;
-  width: 60%;
+  width: 100%;
   margin: auto;
   margin-top: 2rem;
   height: 5vw; }
@@ -525,12 +525,12 @@ h4 {
   @media only screen and (max-width: 62.5em) {
     .introduction {
       width: 500px;
-      height: 333px; } }
+      height: 310px; } }
   @media only screen and (max-width: 37.5em) {
     .introduction {
       grid-row: 2/3;
       justify-content: center;
-      width: 400px;
+      width: 360px;
       height: 400px;
       flex-direction: column; } }
   .introduction a {
@@ -676,17 +676,17 @@ h4 {
 
 @media only screen and (max-width: 50em) {
   .overlay {
-    width: 600px;
-    height: 400px; }
+    width: 500px;
+    height: 310px; }
   .image-text {
     width: 300;
     height: 150;
-    font-size: 8rem; } }
+    font-size: 6rem; } }
 
 @media only screen and (max-width: 37.5em) {
   .overlay {
-    width: 400px;
-    height: 250px; }
+    width: 360px;
+    height: 225px; }
   .image-text {
     width: 300;
     height: 150;
@@ -712,10 +712,14 @@ h4 {
     .links {
       width: 600px;
       height: 400px; } }
+  @media only screen and (max-width: 50em) {
+    .links {
+      width: 500px;
+      height: 310px; } }
   @media only screen and (max-width: 37.5em) {
     .links {
       justify-content: center;
-      width: 400px;
+      width: 360px;
       height: 300px; } }
   .links__text {
     margin-bottom: 3rem;

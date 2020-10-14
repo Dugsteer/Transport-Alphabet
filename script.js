@@ -32,6 +32,7 @@ var imageList = [
   "bike.jpg",
   "car.jpg",
   "dog-sled.jpg",
+  "ecar.jpg",
   "firetruck.jpg",
   "gondola.jpg",
   "helicopter.jpg",
@@ -42,7 +43,7 @@ var imageList = [
   "motorbike.jpg",
   "narrowboat.jpg",
   "offroad-vehicle.jpg",
-  "punt.jpg",
+  "paddle-board.jpg",
   "quad-bike.jpg",
   "rocket.jpg",
   "sailboat.jpg",
@@ -52,7 +53,7 @@ var imageList = [
   "wagon.jpg",
   "X-wing.jpg",
   "yacht.jpg",
-  "zepellin.jpg",
+  "zeppelin.jpg",
 ];
 
 let y = imageText.innerHTML;

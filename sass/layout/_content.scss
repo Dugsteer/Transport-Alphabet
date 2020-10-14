@@ -86,19 +86,19 @@
 }
 @media only screen and (max-width:$bp-medium) {
     .overlay {
-        width: 600px;
-        height: 400px;
+        width: 500px;
+        height: 310px;
     }
     .image-text {
         width: 300;
         height: 150;
-        font-size: 8rem;
+        font-size: 6rem;
     }
 }
 @media only screen and (max-width:$bp-small) {
     .overlay {
-        width: 400px;
-        height: 250px;
+        width: 360px;
+        height: 225px;
     }
 
     .image-text {
