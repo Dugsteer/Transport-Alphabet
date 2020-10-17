@@ -151,8 +151,8 @@ h4 {
   width: 300px;
   height: 500px; }
   .loader-container img {
-    height: 100%;
-    width: 100%; }
+    height: 70%;
+    width: 70%; }
 
 .ghost {
   animation: float 3s ease-out infinite; }
@@ -531,7 +531,7 @@ h4 {
       grid-row: 2/3;
       justify-content: center;
       width: 360px;
-      height: 400px;
+      height: 550px;
       flex-direction: column; } }
   .introduction a {
     display: inline;
