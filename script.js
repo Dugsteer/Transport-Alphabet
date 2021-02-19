@@ -3,6 +3,7 @@ const sidey = document.getElementById('sidebar');
 const loader = document.getElementById("loaderDiv");
 const extra = document.getElementById('info');
 const blue = window.matchMedia("(max-width: 800px)");
+const mainpic = document.getElementById('mainpic');
 
 // Show and hide about info
 function show(){info.classList.toggle('xxc');};
@@ -21,6 +22,53 @@ setTimeout(stopLoader, 1000);
 function myFunction(x) {if (blue.matches) {sidey.classList.remove("block");}}
 function toggler() {sidey.classList.toggle("block");}
 myFunction(blue);
+
+//switch introduction pic
+function switchpic() {
+  switch (mainpic.innerHTML) {
+    case '<img src="img/mini/police-car.png">':
+      mainpic.innerHTML =
+        '<img src="img/mini/sport-car.png">';
+      break;
+    case '<img src="img/mini/sport-car.png">':
+      mainpic.innerHTML =
+        '<img src="img/mini/ship.png">';
+      break;
+    default:
+      mainpic.innerHTML =
+        '<img src="img/mini/police-car.png">';
+  }
+}
+
+setInterval(switchpic, 4000);
+
+//SOUNDS
+const beep = new Audio('sounds/beep.m4a');
+const police = new Audio('sounds/police.m4a');
+const ship = new Audio('sounds/ship.m4a');
+
+function makeSound(){
+  switch (mainpic.innerHTML) {
+    case '<img src="img/mini/sport-car.png">':
+     beep.play();
+     police.pause();
+     ship.pause();
+      break;
+    case '<img src="img/mini/ship.png">':
+     ship.play();
+     beep.pause();
+     police.pause();
+      break;
+    case '<img src="img/mini/police-car.png">':
+     ship.pause();
+     beep.pause();
+     police.play();
+      break;
+      default:
+        console.log('natch');
+
+}
+}
 
 //CHANGE CARDS
 const count = document.getElementById("count");

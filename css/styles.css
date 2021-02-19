@@ -152,7 +152,8 @@ h4 {
   height: 500px; }
   .loader-container img {
     height: 70%;
-    width: 70%; }
+    width: 70%;
+    margin-left: 15%; }
 
 .ghost {
   animation: float 3s ease-out infinite; }
@@ -531,7 +532,7 @@ h4 {
       grid-row: 2/3;
       justify-content: center;
       width: 360px;
-      height: 550px;
+      height: 500px;
       flex-direction: column; } }
   .introduction a {
     display: inline;
@@ -539,8 +540,8 @@ h4 {
     color: #368cbf;
     cursor: pointer; }
   .introduction__img {
-    width: 230px;
-    height: 230px;
+    width: 220px;
+    height: 180px;
     background-color: #368cbf;
     padding: 20px;
     align-self: center;
@@ -551,7 +552,7 @@ h4 {
     @media only screen and (max-width: 62.5em) {
       .introduction__img {
         width: 150px;
-        height: 150px;
+        height: 120px;
         margin-right: 2rem; } }
     .introduction__img img {
       width: 100%;
