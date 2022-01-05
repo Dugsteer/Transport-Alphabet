@@ -76,36 +76,36 @@ let imageArt = document.getElementById('image-art');
 let imageText = document.getElementById('image-text');
 
 var imageList = [
-  "aeroplane.jpg",
-  "bike.jpg",
-  "car.jpg",
-  "dog-sled.jpg",
-  "ecar.jpg",
-  "firetruck.jpg",
-  "gondola.jpg",
-  "helicopter.jpg",
-  "icebreaker.jpg",
-  "jetski.jpg",
-  "kayak.jpg",
-  "limousine.jpg",
-  "motorbike.jpg",
-  "narrowboat.jpg",
-  "offroad-vehicle.jpg",
-  "paddle-board.jpg",
-  "quad-bike.jpg",
-  "rocket.jpg",
-  "sailboat.jpg",
-  "train.jpg",
-  "unicycle.jpg",
-  "van.jpg",
-  "wagon.jpg",
-  "X-wing.jpg",
-  "yacht.jpg",
-  "zeppelin.jpg",
+  "aeroplane.webp",
+  "bike.webp",
+  "car.webp",
+  "dog-sled.webp",
+  "electric-car.webp",
+  "fire-truck.webp",
+  "gondola.webp",
+  "helicopter.webp",
+  "icebreaker.webp",
+  "jet-ski.webp",
+  "kayak.webp",
+  "limousine.webp",
+  "motorbike.webp",
+  "narrowboat.webp",
+  "off-road-vehicle.webp",
+  "paddle-board.webp",
+  "quad-bike.webp",
+  "rocket.webp",
+  "sailboat.webp",
+  "train.webp",
+  "unicycle.webp",
+  "van.webp",
+  "wagon.webp",
+  "X-wing.webp",
+  "yacht.webp",
+  "zeppelin.webp",
 ];
 
 let y = imageText.innerHTML;
-let z = y.concat(".jpg");
+let z = y.concat(".webp");
 let x = imageList.indexOf(z);
 
 
@@ -113,12 +113,19 @@ function goForwards() {
   if (x < imageList.length - 1) {
     x++;
     imageArt.src =  `/img/${imageList[x]}`;
-   imageText.textContent = `${imageList[x].slice(0, -4)}`;
+   imageText.textContent = `${imageList[x].slice(0, -5).replaceAll('-', ' ')}`;
+   imageText.textContent === 'off road vehicle' ? imageText.textContent = 'off-road vehicle' : imageText.textContent = imageText.textContent;
     count.innerHTML = `${x + 1}/${imageList.length}`;
     return x;
   } else {
     imageArt.src = ` /img/${imageList[imageList.length - 1]}`;
-    imageText.textContent = `${imageList[imageList.length - 1].slice(0, -4)}`;
+    imageText.textContent = `${imageList[imageList.length - 1]
+      .slice(0, -5)
+      .replaceAll("-", " ")}`;
+         imageText.textContent === "off road vehicle"
+           ? (imageText.textContent = "off-road vehicle")
+           : (imageText.textContent = imageText.textContent);
+
     count.innerHTML = `${imageList.length}/${imageList.length}`;
     x = 0;
     x = imageList.length -1;
@@ -130,12 +137,20 @@ function goBackwards() {
   if (x > 0) {
     x--;
     imageArt.src =  `/img/${imageList[x]}`;
-    imageText.textContent = `${imageList[x].slice(0, -4)}`;
+    imageText.textContent = `${imageList[x].slice(0, -5).replaceAll('-', ' ')}`;
+       imageText.textContent === "off road vehicle"
+         ? (imageText.textContent = "off-road vehicle")
+         : (imageText.textContent = imageText.textContent);
+
     count.innerHTML = `${x + 1}/${imageList.length}`;
     return x;
   } else {
     imageArt.src = ` /img/${imageList[0]}`;
-    imageText.textContent = `${imageList[0].slice(0, -4)}`;
+    imageText.textContent = `${imageList[0].slice(0, -5).replaceAll("-", " ")}`;
+       imageText.textContent === "off road vehicle"
+         ? (imageText.textContent = "off-road vehicle")
+         : (imageText.textContent = imageText.textContent);
+
     count.innerHTML = `${1}/${imageList.length}`;
     x = 0;
     return x;
